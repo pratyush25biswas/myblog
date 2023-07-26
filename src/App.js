@@ -1,10 +1,11 @@
 import Navbar from './Navbar';
 import Home from './Home';
-import Signup from './Signup';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Create from './Create';
 
-import Login from './Login';
+import Signups from './Signups';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+
+import Logins from './Logins';
 
 function App() {
   return (
@@ -13,15 +14,15 @@ function App() {
         <Navbar />
         <div className="content">
           <Switch>
-            <Route exact path="/">
-              <Create />
-              <Home />
+            <Route exact path="/home">
+              < Home />
+              
             </Route>
             <Route path="/signup">
-              <Signup />
+              <Signups />
             </Route>
             <Route path="/login">
-              <Login />
+              <Logins />
             </Route>
             
           </Switch>
