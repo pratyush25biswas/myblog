@@ -1,0 +1,10 @@
+{
+  "blogs": [
+    {
+      "title": "My first blog",
+      "body": "run npm install to download dependencies",
+      "author": "me",
+      "id": 1
+    }
+  ]
+}
